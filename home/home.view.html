@@ -1,0 +1,12 @@
+﻿<h1>Hi {{vm.user.firstName}}!</h1>
+<p>You're logged in!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<button type="button" class="btn btn-danger">Create t2.nano EC2 server with 10GB of EBS volume</button>
+<p><a href="#!/login" class="btn btn-primary">Logout</a></p>
